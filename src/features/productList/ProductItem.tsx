@@ -1,8 +1,8 @@
 import ProductButton from "./ProductButton.tsx";
-import type { ProductItem } from "../../interfaces";
+import type { ProductItemInterface } from "../../interfaces";
 
 interface ProductItemProps {
-  item: ProductItem;
+  item: ProductItemInterface;
 }
 
 function ProductItem({ item }: ProductItemProps) {
