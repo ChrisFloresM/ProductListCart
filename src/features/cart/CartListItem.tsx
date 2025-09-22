@@ -28,7 +28,7 @@ function CartListItem({ item }: CartListItemProps) {
       </div>
       <RoundedButton
         color="rose-400"
-        icon="/public/icons/icon-remove-item.svg"
+        icon="/icons/icon-remove-item.svg"
         alt="A cross representing the action of removing an item"
         onClickFn={handleRemoveItem}
       />
