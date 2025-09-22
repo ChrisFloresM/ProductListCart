@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+@theme {
+    /*========= Colors =========*/
+    /* Red */
+    --color-custom-red: #C73B0F;
+
+    /* Rose */
+    --color-rose-900: #260F08;
+    --color-rose-500: #87635A;
+    --color-rose-400: #AD8A85;
+    --color-rose-300: #CAAFA7;
+    --color-rose-100: #F5EEEC;
+    --color-rose-50: #FCF8F6;
+
+    /* Green */
+    --color-custom-green: #1EA575;
+
+    /*========= Spacing =========*/
+    --spacing-50: 0.4rem;
+    --spacing-100: 0.8rem;
+    --spacing-150: 1.2rem;
+    --spacing-200: 1.6rem;
+    --spacing-300: 2.4rem;
+    --spacing-400: 3.2rem;
+    --spacing-500: 4rem;
+    --spacing-1100: 8.8rem;
+
+    /*========= Typography =========*/
+    --font-redhat: "Red Hat Display", sans-serif;
+
+    /* Presets de tamaño + line-height */
+    --text-preset-1: 4rem;
+    --leading-preset-1: 120%;
+
+    --text-preset-2: 24px;
+    --leading-preset-2: 125%;
+
+    --text-preset-3: 16px;
+    --leading-preset-3: 150%;
+
+    --text-preset-4: 14px;
+    --leading-preset-4: 150%;
+}
+
+@layer base {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+.preset-1 {
+    @apply text-preset-1 leading-preset-1;
+}
+
+.preset-2 {
+    @apply text-preset-2 leading-preset-2;
+}
+
+.preset-3 {
+    @apply text-preset-3 leading-preset-3;
+}
+
+.preset-4 {
+    @apply text-preset-4 leading-preset-4;
+}
