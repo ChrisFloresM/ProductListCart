@@ -1,7 +1,16 @@
+import { useAppSelector } from "../../hooks/typedHooks.ts";
+import { getCart } from "./cartSlice.ts";
+
 function CartTotal() {
-  const total = 46.5;
+  const cart = useAppSelector(getCart);
+
+  const total = cart.reduce(
+    (count, element) => count + element.amount * element.unitPrice,
+    0,
+  );
+
   return (
-    <p className="flex justify-between text-rose-900">
+    <p className="flex items-center justify-between text-rose-900">
       <span className="preset-4">Order Total</span>
       <span className="preset-2 font-bold">${total.toFixed(2)}</span>
     </p>

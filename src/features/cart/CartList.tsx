@@ -1,34 +1,17 @@
 import CartListItem from "./CartListItem.tsx";
+import { useAppSelector } from "../../hooks/typedHooks.ts";
+import { getCart } from "./cartSlice.ts";
 
-interface CartItem {
-  name: string;
-  amount: number;
-  unitPrice: number;
+export interface CartListProps {
+  type: string;
 }
+function CartList({ type }: CartListProps) {
+  const currentCart = useAppSelector(getCart);
 
-const fakeItems: CartItem[] = [
-  {
-    name: "Classic Tiramisu",
-    amount: 1,
-    unitPrice: 5.5,
-  },
-  {
-    name: "Vanilla Bean Creme Brulee",
-    amount: 4,
-    unitPrice: 7,
-  },
-  {
-    name: "Vanilla Panna Cotta",
-    amount: 2,
-    unitPrice: 6.5,
-  },
-];
-
-function CartList() {
   return (
-    <ul className="flex flex-col border-b-1 border-rose-200 pb-300">
-      {fakeItems.map((item) => (
-        <CartListItem item={item} key={item.name} />
+    <ul className="flex max-h-[300px] flex-1 flex-col overflow-y-scroll border-b-1 border-rose-200 pb-300">
+      {currentCart.map((item) => (
+        <CartListItem item={item} key={item.name} type={type} />
       ))}
     </ul>
   );

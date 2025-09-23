@@ -18,7 +18,7 @@ function ProductItem({ item }: ProductItemProps) {
           alt={`A picture display a ${item.name}`}
         />
       </picture>
-      <ProductButton />
+      <ProductButton product={item} />
       <div className="space-y-50">
         <p className="preset-4 text-rose-500">{category}</p>
         <p className="preset-3 font-bold text-rose-900">{name}</p>

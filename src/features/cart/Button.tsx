@@ -1,7 +1,16 @@
-function Button() {
+import { type PropsWithChildren } from "react";
+
+interface ButtonProps {
+  clickFn: () => void;
+}
+
+function Button({ children, clickFn }: PropsWithChildren<ButtonProps>) {
   return (
-    <button className="bg-custom-red rounded-full px-300 py-200 font-bold text-white hover:cursor-pointer">
-      Confirm order
+    <button
+      onClick={clickFn}
+      className="bg-custom-red w-full rounded-full px-300 py-200 font-bold text-white hover:cursor-pointer"
+    >
+      {children}
     </button>
   );
 }
