@@ -24,7 +24,7 @@ function IncreaseButtons({ product }: ProductButtonProps) {
   }
 
   return (
-    <div className="preset-4 border-custom-red bg-custom-red m-auto flex w-[70%] translate-y-[-50%] justify-between rounded-full border-2 px-300 py-150 font-bold text-rose-900 focus:ring">
+    <div className="preset-4 border-custom-red bg-custom-red m-auto flex w-[70%] translate-y-[-50%] justify-between rounded-full border-2 px-300 py-150 font-bold text-rose-900">
       <RoundedButton
         color="white"
         icon="/icons/icon-decrement-quantity.svg"
