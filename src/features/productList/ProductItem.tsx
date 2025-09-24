@@ -7,6 +7,7 @@ interface ProductItemProps {
 
 function ProductItem({ item }: ProductItemProps) {
   const { category, name, price, image } = item;
+
   return (
     <li className="group w-full">
       <picture className="w-full">

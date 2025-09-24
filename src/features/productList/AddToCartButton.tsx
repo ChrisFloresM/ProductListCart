@@ -20,7 +20,7 @@ function AddToCartButton({ product }: ProductButtonProps) {
 
   return (
     <button
-      className="preset-4 m-auto flex w-[70%] translate-y-[-50%] justify-center space-x-100 rounded-full border-2 border-rose-400 bg-white px-300 py-150 font-bold text-rose-900 hover:cursor-pointer"
+      className="preset-4 hover:border-custom-red m-auto flex w-[70%] translate-y-[-50%] justify-center space-x-100 rounded-full border-2 border-rose-400 bg-white px-300 py-150 font-bold text-rose-900 hover:cursor-pointer"
       onClick={handleAddToCart}
     >
       <img
