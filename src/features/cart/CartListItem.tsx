@@ -29,8 +29,8 @@ function CartListItem({ item, type }: CartListItemProps) {
         )}
         <div className="flex flex-col gap-100">
           <h3 className="preset-4 font-bold text-rose-900">{name}</h3>
-          <p className="preset-4 flex gap-100">
-            <span className="text-custom-red font-bold">
+          <p className="preset-4 flex gap-100" translate="no">
+            <span className="text-custom-red font-bold" translate="no">
               {amount.toFixed(2)}x
             </span>
             <span className="text-rose-500" translate="no">
