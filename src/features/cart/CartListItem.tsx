@@ -33,9 +33,11 @@ function CartListItem({ item, type }: CartListItemProps) {
             <span className="text-custom-red font-bold">
               {amount.toFixed(2)}x
             </span>
-            <span className="text-rose-500">@${unitPrice.toFixed(2)}</span>
+            <span className="text-rose-500" translate="no">
+              @${unitPrice.toFixed(2)}
+            </span>
             {type === "cart" && (
-              <span className="font-bold text-rose-500">
+              <span className="font-bold text-rose-500" translate="no">
                 ${totalPrice.toFixed(2)}
               </span>
             )}
@@ -50,7 +52,7 @@ function CartListItem({ item, type }: CartListItemProps) {
           onClickFn={handleRemoveItem}
         />
       ) : (
-        <span className="font-bold text-rose-900">
+        <span className="font-bold text-rose-900" translate="no">
           ${totalPrice.toFixed(2)}
         </span>
       )}

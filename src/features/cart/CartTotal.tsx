@@ -12,7 +12,9 @@ function CartTotal() {
   return (
     <p className="flex items-center justify-between text-rose-900">
       <span className="preset-4">Order Total</span>
-      <span className="preset-2 font-bold">${total.toFixed(2)}</span>
+      <span className="preset-2 font-bold" translate="no">
+        ${total.toFixed(2)}
+      </span>
     </p>
   );
 }

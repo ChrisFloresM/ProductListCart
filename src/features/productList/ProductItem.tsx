@@ -22,7 +22,7 @@ function ProductItem({ item }: ProductItemProps) {
       <div className="space-y-50">
         <p className="preset-4 text-rose-500">{category}</p>
         <p className="preset-3 font-bold text-rose-900">{name}</p>
-        <p className="preset-3 text-custom-red font-bold">
+        <p className="preset-3 text-custom-red font-bold" translate="no">
           ${price.toFixed(2)}
         </p>
       </div>

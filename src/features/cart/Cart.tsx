@@ -15,9 +15,15 @@ function Cart() {
 
   return (
     <article className="flex-1 p-300">
-      <h2 className="preset-2 text-custom-red mb-300 font-bold">
-        Your Cart ({`${cartElements}`})
-      </h2>
+      <div className="flex items-center justify-start gap-100">
+        <h2 className="preset-2 text-custom-red mb-300 font-bold">Your Cart</h2>
+        <span
+          className="preset-2 text-custom-red mb-300 font-bold"
+          translate="no"
+        >
+          ({cartElements})
+        </span>
+      </div>
       {displayEmptyCart ? <EmptyCart /> : <CartOverview />}
     </article>
   );
