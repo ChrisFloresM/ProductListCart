@@ -27,13 +27,11 @@ The main purpose of this projects is to practice the following topics:
 3. In case you want, delete the product directly from the cart list
 4. Confirm order!
 
-
 ## **Desktop preview:**
-
-
+![demo-desktop](https://github.com/user-attachments/assets/ee8db5e2-877f-42f7-b6db-87a6c163b4ab)
 
 ## **Mobile preview:**
-
+![demo-mobile](https://github.com/user-attachments/assets/d0c185fb-d069-4ebc-8941-02a1c2f106b9)
 
 ## Live site url:
 https://cf-productlist.netlify.app/
